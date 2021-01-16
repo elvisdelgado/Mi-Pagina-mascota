@@ -1,0 +1,457 @@
+body{
+    background:rgba(150, 106, 175, 0.521) ;
+    font-family: 'Roboto',sans-serif;
+}
+.container{
+    width: 95%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+header{
+    background-color: rgb(134, 15, 88);
+    color: white;
+    padding: .1em 0;
+    position: relative;
+}
+header::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.logo{
+    float: left;
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+}
+.logo span{
+    font-weight: 300;
+}
+.site-nav{
+    top: 100%;
+    right: 0;
+    position: absolute;
+    background: #464655;
+    height: 0;
+    overflow: hidden;
+}
+.site-nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.site-nav li{
+    border-bottom: 1px solid #575766;
+}
+.site-nav li:last-child{
+    border-bottom: none;
+}
+.site-nav a{
+    color: white;
+    display: block;
+    padding: 2em 6em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.site-nav-open{
+    height: auto;
+}
+.site-nav a:hover,
+.site-nav a:focus{
+    
+    color: tomato;
+}
+
+.menu-toggle{   
+    padding: 1em;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+}
+.menu-open .prueba{
+    transform: rotate(45deg);
+}
+.menu-open .prueba::before{
+    opacity: 0;
+}
+.menu-open .prueba::after{
+    transform: translateY(-3px) rotate(-90deg);
+}
+
+.prueba,
+.prueba::before,
+.prueba::after{
+    content: '';
+    display: block;
+    background: #ebebd3;
+    height: 3px;
+    width: 1.75em;
+    border-radius: 3px;
+}
+.prueba::before{
+    transform: translateY(-6px);
+}
+.prueba::after{
+    transform: translateY(3px);
+}
+@media(min-width:700px){
+    .menu-toggle{
+        display: none;
+    }
+    .site-nav{
+        height: auto;
+        position: relative;
+        background: transparent;
+        float: right;
+        margin-right: 10px;
+        clip-path: initial;
+    }
+    .site-nav li{
+        display: inline-block;
+        border: none;
+    }
+    .site-nav a{
+        padding: 0;
+        margin-left: 2em;
+    }
+    
+    .site-nav a:hover,
+    .site-nav a:focus{
+        background: transparent;
+    }
+    #categoria{
+        text-align: center;
+    }
+    .uno{
+        text-align: center;
+    }
+    .uno-dos{
+        text-align: center;
+    }
+    .dos{
+        text-align: center;
+    }
+    .contendedor-servicio{
+        text-align: center;
+    }
+}
+
+#categoria{
+    text-align: center;
+    width: 900px;
+    height: auto; overflow: hidden;
+    border: 0px solid;
+    margin-top: 10px;
+}
+#Acerca{
+    text-align: center;
+    color: #b83239;
+    height: auto; overflow: hidden;
+    border: 0px solid;
+    margin-top: 10px;
+}
+#mision{
+    text-align: center;
+    height: auto; overflow: hidden;
+    border: 0px solid;
+    margin-top: 10px;
+}
+#vision{
+    text-align: center;
+    height: auto; overflow: hidden;
+    border: 0px solid;
+    margin-top: 10px;
+}
+#objetivos{
+    text-align: center;
+    height: auto; overflow: hidden;
+    border: 0px solid;
+    margin-top: 10px;
+}
+
+.uno{
+  height: 240px;
+  border: 0px solid;
+  text-align: center;
+  width: 450px;
+  display: inline-block;
+  text-align: justify;
+
+}
+.uno-dos{
+  height: 240px;
+  border: 0px solid;
+  text-align: center;
+  width: 450px;
+  display: inline-block;
+  text-align: justify;
+}
+
+.dos{
+  height: 240px;
+  border: 0px solid;
+  text-align: center;
+  width: 450px;
+  display: inline-block;
+  text-align: justify;
+}
+
+#Propuesta{
+   text-align: center;
+   color: #b83239;
+   height: auto; overflow: hidden;
+   border: 0px solid;
+   margin-top: 10px;
+}
+/*pie de pagina */
+footer{
+    background: #9f8ad0;
+    padding-bottom: 0.1px;
+}
+
+.footer-contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contact-us{
+    width: 40%;
+    color: #fff;
+
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color: #794ba2;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+/*pagina de registro */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.from-registro{
+    width: 450px;
+    background: rgb(111, 0, 139, 0.685);
+    
+    padding: 20px;
+    margin: auto;
+    margin-top: 65px;
+    border-radius: 4px;
+    font-family: 'Reboto', sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+.from-registro h4{
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.controles{
+    width: 100%;
+    background: white;
+    padding: 13px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 2px solid #1b0a7c;
+    font-family: 'Reboto', sans-serif;
+    font-size: 18px;
+}
+.from-registro .boto{
+    width: 100%;
+    background: #19037a;
+    border: none;
+    padding: 14px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+.from-registro p{
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+.from-registro a{
+    color: white;
+    text-decoration: none;
+
+}
+.from-registro a:hover{
+    color: white;
+    text-decoration: underline;
+}
+/*pagina de para acceder*/
+.from-login{
+    width: 450px;
+    background: rgba(111, 0, 139, 0.685);
+    padding: 20px;
+    margin: auto;
+    margin-top: 65px;
+    border-radius: 4px;
+    font-family: 'Reboto', sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+.from-login h4{
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.from-login .boto-lo{
+    width: 100%;
+    background: #19037a;
+    border: none;
+    padding: 14px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+.from-login p{
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+.from-login a{
+    color: white;
+    text-decoration: none;
+
+}
+.from-login a:hover{
+    color: tomato;
+    text-decoration: underline;
+}
+/*pagina de transacciones*/
+.card {
+    width: 35%;
+    position: relative;
+    background: #ffffff;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.card .price {
+    position: absolute;
+}
+
+.card:hover > .card-info {
+    display: block;
+    transition: 0.2s all ease;
+}
+
+.card .card-buttons .btn:hover {
+    color: #ffffff;
+}
+
+.card:hover,
+.card-info {
+    box-shadow: 1px 1px 13px 2px rgba(94, 94, 94, 0.5);
+}
+.control{
+    width: 65%;
+    background: white;
+    padding: 13px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 2px solid ;
+    font-family: 'Reboto', sans-serif;
+    font-size: 18px;
+}
+.prue{
+    text-align: start;
+    
+    
+    font-family: 'Reboto', sans-serif;
+    font-size: 18px;
+}
+.boton-pedi{
+    width: 65%;
+    background: #ce8736;
+    border: none;
+    padding: 14px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+.boton-A{
+    width: 65%;
+    background: #b7ce36;
+    border: none;
+    padding: 14px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+.boton-R{
+    width: 65%;
+    background: #b83239;
+    border: none;
+    padding: 14px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+.boton-M{
+    width: 65%;
+    background: #36b7ce;
+    border: none;
+    padding: 14px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+.boton-P{
+    display: none;
+    width: 65%;
+    background: #b7ce36;
+    border: none;
+    padding: 14px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}

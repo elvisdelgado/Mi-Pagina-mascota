@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracion</title>
+    <!--utilizacion del main.js-->
+    <script src="main.js"></script> 
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="Logo">Tienda <span>$</span></h1>
+        </div>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="index.html"><i class="site-nav--icon">Inicio</i></a></li>
+                <li><a href="login.html"><i class="site-nav--icon">Acceder</i></a></li>
+                <li><a href="registroUsua.html"><i class="site-nav--icon">Registrarse</i></a></li>
+                <li><a href="index.html#Acerca"><i class="site-nav--icon">Acerca de</i></a></li>
+                <li><a href="index.html#Propuesta"><i class="site-nav--icon">Idea de propuesta</i></a></li>
+                <li><a href="consulta.html"><i class="site-nav--icon">Consulta</i></a></li>
+                <li><a href="adminPag.html"><i class="site-nav--icon">Administración</i></a></li>
+                <li><a href="transaccion.html"><i class="site-nav--icon">Transacción</i></a></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onclick="esconder()">
+            <div class="prueba"> </div>
+        </div>
+    </header>
+    <center>
+        <div class="card">
+            
+            <div class="card-info">
+                
+                    <label>Tipo de mascosta: Perro</label>
+                   
+                    <br>
+                    <label>Cliente: Jose Quinteros</label>
+                    <br>
+                    <br>
+                    <label>Nombre de mascota: jesus</label>
+                    <br>
+                    <label>Año de la mascota: 1</label>
+                    <br>
+                    <label>Veterinario: Fernando Garcia</label>
+                    <br>
+                    <label class="prue" for="envio">Envio</label>
+                    <input class="control" type="date" name="fenvi" id="fenvi" value="2021-01-10" min="2021-01-09">
+                    <br>                
+                    <input class="boton-A" id="btn-1" type="submit" value="Aprobar" onclick="Aprobar()">
+                    <input class="boton-P" id="btn-2" type="submit" value="Asignar veterinario" onclick="Por_despachar()">
+                    <input class="boton-R" id="btn-3" type="submit" value="Rechazar" onclick="Rechazar()">
+                    <input class="boton-M" id="btn-4" type="submit" value="Modificar fecha" onclick="Modificar()">
+
+                    
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </center>
+    
+</body>
+</html>

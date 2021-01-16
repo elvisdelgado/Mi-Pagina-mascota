@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta</title>
+   <!--utilizacion del main.js-->
+   <script src="consultas.js"></script> 
+   <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+   <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="Logo">Tienda <span>$</span></h1>
+        </div>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="index.html"><i class="site-nav--icon">Inicio</i></a></li>
+                <li><a href="login.html"><i class="site-nav--icon">Acceder</i></a></li>
+                <li><a href="registroUsua.html"><i class="site-nav--icon">Registrarse</i></a></li>
+                <li><a href="index.html#Acerca"><i class="site-nav--icon">Acerca de</i></a></li>
+                <li><a href="index.html#Propuesta"><i class="site-nav--icon">Idea de propuesta</i></a></li>
+                <li><a href="consulta.html"><i class="site-nav--icon">Consulta</i></a></li>
+                <li><a href="adminPag.html"><i class="site-nav--icon">Administración</i></a></li>
+                <li><a href="transaccion.html"><i class="site-nav--icon">Transacción</i></a></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onclick="esconder()">
+            <div class="prueba"> </div>
+        </div>
+    </header>
+    
+    <section>
+        <form action="" method="" class="from-registro">
+    
+            <h4>Consulta</h4>
+            <label >Tipo mascota:</label>
+            <br>
+            <input class="controles" type="text" name="cliente" id="buscar"placeholder="buscar por tipo de mascota ">
+            <label >Desde:</label>
+            <br>
+            <input class="controles" type="date" placeholder="Fecha desde..." value="" name="fechainicio"/>
+            <label>Hasta:</label>
+            <br>
+            <input class="controles" type="date" placeholder="Fecha hasta..." value="" name="fechafin"/>
+                   
+        </form>
+        <br>
+        <br>
+        <table id="tabla" class="table" borde="1" style="margin: 0 auto;">
+            <tr> 
+                <th>Nombre Cliente</th> 
+                <th>Tipo mascota</th>
+                <th>Fecha</th>
+                <th>Nombre mascota</th>
+                <th>año</th>
+            </tr>
+            <tbody>
+                <tr> 
+                    <td>Jose Quinteros</td> 
+                    <td>perro</td>
+                    <td>10/01/2021</td>
+                    <td>firulais</td>
+                    <td>1</td>
+               </tr>   
+
+               <tr> 
+                   <td>Maria Delgado</td> 
+                   <td>gato</td>
+                   <td>13/01/2021</td>
+                   <td>manuel</td>
+                   <td>1</td>
+              </tr>
+            </tbody>
+            </table>  
+               
+    </section>
+   
+</body>
+</html>

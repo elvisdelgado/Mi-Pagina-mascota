@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaccíon</title>
+    <!--utilizacion del main.js-->
+    <script src="main.js"></script> 
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="Logo">Tienda <span>$</span></h1>
+        </div>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="index.html"><i class="site-nav--icon">Inicio</i></a></li>
+                <li><a href="login.html"><i class="site-nav--icon">Acceder</i></a></li>
+                <li><a href="registroUsua.html"><i class="site-nav--icon">Registrarse</i></a></li>
+                <li><a href="index.html#Acerca"><i class="site-nav--icon">Acerca de</i></a></li>
+                <li><a href="index.html#Propuesta"><i class="site-nav--icon">Idea de propuesta</i></a></li>
+                <li><a href="consulta.html"><i class="site-nav--icon">Consulta</i></a></li>
+                <li><a href="adminPag.html"><i class="site-nav--icon">Administración</i></a></li>
+                <li><a href="transaccion.html"><i class="site-nav--icon">Transacción</i></a></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onclick="esconder()">
+            <div class="prueba"> </div>
+        </div>
+        
+    </header>
+    <form action="" class="from-registro">
+    
+        <h4>REGISTRO DE MASCOTA</h4>
+        <label >Cliente:</label>
+        <br>
+        <input class="controles" type="text" name="cliente" id="cliente" placeholder="ingrese nombre del cliente ">
+        <br>
+        <label >Tipo de mascota:</label>
+        <br>
+        <input class="controles" type="text" name="producto" id="producto" placeholder="ingrese tipo de mascota">
+        <label >Fecha de pedido:</label>
+        <br>
+        <input class="controles" type="date" name="fecha" id="fecha">
+        <label > Nombre mascota:</label>
+        <br>
+        <input class="controles" type="text" name="cliente" id="dire" placeholder="Nombre de la mascota">
+        <label >Año:</label>
+        <br>
+        <br>
+        <input class="controles" type="number" name="cantidad" id="cantidad" min="0" placeholder="ingrese el año de la mascota">
+
+        <input class="boto" type="submit" value="Enviar" onclick="Enviar()">
+               
+    </form>
+
+</body>
+</html>

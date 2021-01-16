@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!--utilizacion del main.js-->
+    <script src="main.js"></script> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="Logo">Tienda <span>$</span></h1>
+        </div>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="index.html"><i class="site-nav--icon">Inicio</i></a></li>
+                <li><a href="login.html"><i class="site-nav--icon">Acceder</i></a></li>
+                <li><a href="registroUsua.html"><i class="site-nav--icon">Registrarse</i></a></li>
+                <li><a href="index.html#Acerca"><i class="site-nav--icon">Acerca de</i></a></li>
+                <li><a href="index.html#Propuesta"><i class="site-nav--icon">Idea de propuesta</i></a></li>
+                <li><a href="consulta.html"><i class="site-nav--icon">Consulta</i></a></li>
+                <li><a href="adminPag.html"><i class="site-nav--icon">Administración</i></a></li>
+                <li><a href="transaccion.html"><i class="site-nav--icon">Transacción</i></a></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onclick="esconder()">
+            <div class="prueba"> </div>
+        </div>
+    </header>
+    <!--utilizacion del main.js-->
+    <script src="main.js"></script> 
+
+    <form action="" class="from-registro">
+    
+        <h4>REGISTRO DE USUARIO</h4>
+        <input class="controles" type="text" name="nombre" id="Nombre" placeholder="ingrese su nombre" 
+        >
+        <input class="controles" type="text" name="nombre" id="Apellido" placeholder="ingrese su apellido" >
+        <input class="controles" type="text" name="nombre" id="Correo" placeholder="ingrese su correo">
+        <input class="controles" type="password" name="nombre" id="Clave" placeholder="ingrese su contrseña">
+        <input class="boto" type="submit" value="registro" onclick="registro()">
+        <p><a href="login.html">¿ya tiene cuenta?</a></p>
+    </form>
+    <footer id="contacto">
+            <div class="cotacts-us">
+                <h2 class="brand">CLIENTE</h2>
+                <p>esta agusto con nuestro servicio</p>
+            </div>
+            <div class="social-media">
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-instagram-alt' ></i>
+                </a>
+            </div>
+    </footer>
+</body>
+</html>
